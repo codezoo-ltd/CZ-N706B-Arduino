@@ -1,7 +1,5 @@
 # CZ-N706B Arduino Library
 
-Version **0.0.1** · CodeZoo
-
 Shared AT-command, power-control and communication support for the CodeZoo
 CZ-N706B modem, with **21 examples for each of three boards**.
 
