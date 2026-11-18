@@ -12,7 +12,7 @@ CZ-N706B modem, with **21 examples for each of three boards**.
 Install the matching Arduino board package and select the board below.
 Use the example directory for that board; each sketch is a separate example.
 
-| Setting | UNO R4 | ESP32 | ESP32-S3 |
+| Setting | UNO R4/UNO Q | ESP32 | ESP32-S3 |
 | --- | --- | --- | --- |
 | Arduino IDE board | Arduino UNO R4 Minima | ESP32 Dev Module | ESP32S3 Dev Module |
 | Examples | `examples/UNO_R4/` | `examples/ESP32/` | `examples/ESP32S3/` |
