@@ -9,7 +9,7 @@ static const unsigned long MODEM_AT_PC_LOG_TIMEOUT_MS = 100;
 static const unsigned long MODEM_AT_RECOVERY_DRAIN_TIMEOUT_MS = 100;
 static const unsigned long MODEM_AT_RECOVERY_QUIET_MS = 5;
 static HardwareSerial *modemUart = NULL;
-static HardwareSerial *pcUart = NULL;
+static Stream *pcUart = NULL;
 static unsigned long quietMs = 100;
 static char rxLine[MODEM_AT_LINE_SIZE];
 static size_t rxLength = 0;
@@ -52,7 +52,7 @@ static void resetReceiveState(void) {
     promptPadding = false;
 }
 
-void ModemAT_begin(HardwareSerial &modem, HardwareSerial &pc, unsigned long quietDelayMs) {
+void ModemAT_begin(HardwareSerial &modem, Stream &pc, unsigned long quietDelayMs) {
     modemUart = &modem;
     pcUart = &pc;
     quietMs = quietDelayMs;

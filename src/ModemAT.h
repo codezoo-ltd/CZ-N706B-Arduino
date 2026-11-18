@@ -19,7 +19,7 @@ enum ModemATValueResult {
     MODEM_AT_VALUE_BUFFER_TOO_SMALL
 };
 
-void ModemAT_begin(HardwareSerial &modemUart, HardwareSerial &pcUart, unsigned long quietMs);
+void ModemAT_begin(HardwareSerial &modemUart, Stream &pcUart, unsigned long quietMs);
 bool ModemAT_isInitialized(void);
 bool ModemAT_resetAfterVerifiedPowerState(void);
 ModemATResult ModemAT_prepareAfterPowerOn(unsigned long drainTimeoutMs, unsigned long quietMs);
